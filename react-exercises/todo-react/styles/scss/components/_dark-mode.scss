@@ -1,0 +1,74 @@
+.dark-mode {
+    background: $dark-blue;
+
+    &-container {
+        background: $teal-blue;
+        border: 2px;
+
+        &-text {
+            background-color: $dark-blue;
+        }
+    }
+
+    &-group {
+        max-height: 422px;
+        min-height: 422px;
+        overflow-y: auto;
+        width: 100%;
+        & li:nth-child(even) {
+            background-color: $steal-blue;
+            border: 2px solid $teal-blue;
+        }
+        & li:nth-child(odd) {
+            background-color: $dark-blue;
+            border: 2px solid $teal-blue;
+        }
+
+        &-gray {
+            background-color: $dark-blue;
+            border: 2px solid $teal-blue;
+        }
+
+        &-white {
+            background-color: $steal-blue;
+            border: 2px solid $teal-blue;
+        }
+    }
+
+    &-text {
+        color: $white;
+    }
+
+    &-btn {
+        background: $aqua;
+        --bs-btn-bg: $aqua;
+        --bs-btn-border-color: $aqua;
+        --bs-btn-hover-bg: $aqua;
+        --bs-btn-hover-border-color: $aqua;
+        --bs-btn-active-bg: $aqua;
+        --bs-btn-active-border-color: $aqua;
+        --bs-btn-disabled-bg: $aqua;
+        --bs-btn-disabled-border-color: $aqua;
+
+        &:hover {
+            background-color: aqua;
+            border-color: var(--bs-btn-hover-border-color);
+            color: $aqua;
+        }
+    }
+
+    &-checkBox {
+        background-color: $white;
+        border-color: $white;
+
+        &:checked {
+            background-color: $white;
+            border-color: $white;
+        }
+
+        &:checked[type="checkbox"] {
+            --bs-form-check-bg-image: url(https://png.pngtree.com/element_our/20190528/ourlarge/pngtree-check-icon-design-image_1145393.jpg);
+            stroke: $dark-gray;
+        }
+    }
+}
