@@ -1,0 +1,88 @@
+.Pricing {
+    padding: 90px 0;
+
+    &-content {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &-container {
+        display: flex;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    &-item {
+        background: $midnight;
+        box-shadow: $shadow;
+        color: $white;
+        margin: 0 15px;
+        width: 33.3%;
+    }
+
+    &-title {
+        font-size: 18px;
+        font-weight: 600;
+        padding: 35px 30px 25px;
+        text-align: center;
+    }
+
+    &-price {
+        background: $transparent-white;
+        display: block;
+        font-size: 35px;
+        font-weight: bold;
+        padding: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    &-features {
+        display: flex;
+        flex-direction: column;
+        padding: 35px 50px 18px;
+
+        &-item {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            padding: 14px 0;
+
+            &:nth-child(even) {
+                border-bottom: 1px dashed $white-dashed;
+                border-top: 1px dashed $white-dashed;
+            }
+        }
+    }
+
+    &-button {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-container {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        &-item {
+            margin-top: 30px;
+            width: 45%;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-container {
+            align-items: center;
+            flex-direction: column;
+            gap: 35px;
+        }
+
+        &-item {
+            margin: 20px 0 0;
+            width: 100%;
+        }
+    }
+}

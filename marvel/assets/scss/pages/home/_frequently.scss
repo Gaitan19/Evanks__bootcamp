@@ -1,0 +1,80 @@
+.Frequently {
+    padding-bottom: 70px;
+    width: 100%;
+
+    &-marvel {
+        padding: 70px 0;
+    }
+
+    &-container {
+        display: flex;
+        margin-top: 40px;
+        width: 100%;
+
+        &-left,
+        &-right {
+            width: 46.6%;
+        }
+
+        &-left {
+            border-right: 2px dashed $transparent-gray;
+        }
+    }
+
+    &-question {
+        margin-left: 10px;
+        padding: 15px;
+        width: 100%;
+
+        &:nth-child(even) {
+            border-bottom: 2px dashed $transparent-gray;
+            border-top: 2px dashed $transparent-gray;
+        }
+    }
+
+    &-titles {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    &-text {
+        color: $dark-gray;
+        font-size: 14px;
+        padding: 0 20px 40px 0;
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-question {
+            min-height: 185px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-text {
+            padding-bottom: 15px;
+        }
+
+        &-question {
+            min-height: 203px;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-container {
+            flex-direction: column;
+
+            &-left,
+            &-right {
+                border: none;
+                width: 100%;
+            }
+        }
+
+        &-question {
+            min-height: auto;
+            &:nth-child(even) {
+                border: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../assets/css/main.css"/>
+    </head>
+    <body>
+        <div class="d-flex justify-content-center">
+            <div class="SignMe">
+                <img src="../images/logo-smbs-1.png" alt="">
+                <div class="Format-container">
+                    <div class="SignMe-box">
+                        <h2 class="Format-title">
+                            Sign Up for Our Newsletter
+                        </h2>
+                        <p class="Format-text">
+                            Fill out your information below to be signed up for our informative newsletter.
+                        </p>
+                    </div>
+    
+                    <div  class="Input-container">
+                        <label for="name-signUp" class="Format-text">Name</label>
+                        <input class="Input" type="text" placeholder="Name" id="name-signUp" required="">
+                    </div>
+    
+                    <div  class="Input-container">
+                        <label for="Email-signUp" class="Format-text">Email Address</label>
+                        <input class="Input" type="email" placeholder="Email Address" id="Email-signUp" required="">
+                    </div>
+    
+                    <div  class="Input-container">
+                        <label for="Password-signUp" class="Format-text">Password</label>
+                        <input class="Input" type="password" placeholder="***************" id="Password-signUp" required="">
+                    </div>
+    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="conditions">
+                        <label class="form-check-label Format-text" for="conditions">
+                            I agree to receive e-mails from your company and your terms and conditions.
+                        </label>
+                    </div>
+    
+                    <button class="Button" id="submit-signUp" type="button">Sign Up</button>
+                    <h2 class="Format-text Format-link">Don&#39;t have an account? <button class="Format-text Format-link Format-button" id="redirect-login" type="button">Login here!</button>
+
+                </div>
+            </div>
+        </div>
+        <script src="../assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://kit.fontawesome.com/2e6341f303.js" crossorigin="anonymous"></script> 
+    </body>
+</html>

@@ -1,0 +1,49 @@
+.Testimonials {
+    background: $background-midnight;
+    padding: 80px 0;
+    width: 100%;
+
+    &-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-container {
+        align-items: center;
+        background: none;
+        border-radius: 15px;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 100px;
+    }
+
+    &-number {
+        font-family: $anton;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    &-name {
+        font-size: 28px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    &-text {
+        text-align: center;
+    }
+
+    @include media-breakpoint-down(md) {
+        &-container {
+            min-height: 181px;
+            padding: 0;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-container {
+            min-height: 205px;
+        }
+    }
+}

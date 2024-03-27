@@ -1,0 +1,71 @@
+.Contact {
+    padding: 70px 0;
+    width: 100%;
+
+    &-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 45px;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    &-information {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        padding: 0 10px;
+        width: 30%;
+    }
+
+    &-text {
+        color: $midnight;
+        margin-left: 8px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 15px;
+        width: 70%;
+
+        textarea {
+            height: 134px;
+        }
+    }
+
+    &-inputs {
+        border: 1px solid $white-smoke;
+        color: $dark-gray;
+        font-family: $roboto;
+        font-size: 13px;
+        line-height: 26px;
+        margin-bottom: 25px;
+        padding: 0 10px;
+        width: 48%;
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-content {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &-information,
+        &-form {
+            width: 100%;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-inputs {
+            width: 100%;
+        }
+    }
+}

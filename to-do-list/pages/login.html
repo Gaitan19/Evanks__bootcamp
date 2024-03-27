@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../assets/css/main.css"/>
+    </head>
+    <body>
+        <div class="d-flex justify-content-center">
+            <div class="Login">
+                <img src="../images/logo-smbs-1.png" alt="">
+                <div class="Format-container">
+                    <h2 class="Login-title Format-title">
+                        WELCOME TO THE TODO APP
+                    </h2>
+
+                    <div  class="Input-container">
+                        <label for="Email-login" class="Format-text">Email Address</label>
+                        <input class="Input" type="email" placeholder="Email Address" id="Email-login" required="">
+                    </div>
+
+                    <div  class="Input-container">
+                        <label for="Password-login" class="Format-text">Password</label>
+                        <input class="Input" type="password" placeholder="***************" id="Password-login" required="">
+                    </div>
+
+                    <button class="Button" id="Submit-login" type="button">Login</button>
+                    <h2 class="Format-text Format-link">Don&#39;t have an account? <button class="Format-text Format-link Format-button" id="redirect-signUp" type="button">Sign Up here!</button></h2>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="../assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://kit.fontawesome.com/2e6341f303.js" crossorigin="anonymous"></script> 
+    </body>
+</html>

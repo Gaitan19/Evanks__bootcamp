@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../assets/images/icon.png" type="image/png">
+        <title>Marvel | Gallery</title>
+        <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/assets/css/main.css" />
+    </head>
+    <body>
+        <div id="header"></div>
+        <section id="hero" class="Hero">
+            <div class="Container Hero-container">
+                <img class="Hero-image" alt="Marvel heroes quotes"/>
+                <h2 class="Hero-text"></h2>
+                <a class="Button Button-order" target="_blank" href="https://marvelcinematicuniverse.fandom.com/es/wiki/Iniciativa_Vengadores">Learn More</a>
+            </div>
+        </section>
+        <section class="Gallery">
+            <div class="Container Gallery-content">
+               <h2 class="Gallery-title">Gallery</h2>
+               <div class="Gallery-container">
+                    <div class="Gallery-container-left">
+                        <div class="Gallery-container-image Gallery-image-primary">
+                            <img class="Gallery-image" src="../assets/images/marvel1.jpg"alt="Marvel logo"/>
+                            <button class="Gallery-container-icon Button-modal">
+                                <span class="fa-regular fa-eye Gallery-icon"></span>
+                            </button>
+                        </div>
+
+                        <div class="Gallery-container-image Gallery-image-primary">
+                            <img class="Gallery-image" src="../assets/images/marvel2.jpg" alt="Marvel united"/>
+                            <button class="Gallery-container-icon Button-modal">
+                                <span class="fa-regular fa-eye Gallery-icon"></span>
+                            </button>
+                        </div>
+
+
+                        <div class="Gallery-container-image Gallery-image-secondary">
+                            <img class="Gallery-image" src="../assets/images/marvel3.jpg" alt="Heroes comics version"/>
+                            <button class="Gallery-container-icon Button-modal">
+                                <span class="fa-regular fa-eye Gallery-icon"></span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="Gallery-container-right">
+                        <div class="Gallery-container-image w-100">
+                            <img class="Gallery-image" src="../assets/images/marvel4.jpg" alt="Iron man"/>
+                            <button class="Gallery-container-icon Button-modal">
+                                <span class="fa-regular fa-eye Gallery-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div id="modal" class="Modal">
+                        <span id="closeModal" class="fa-solid fa-xmark Modal-close"></span>
+                        <img class="Modal-content" id="modalImage">
+                    </div>
+               </div>
+            </div>
+        </section>
+        <div id="footer"></div>
+        
+        <script src="https://kit.fontawesome.com/2e6341f303.js" crossorigin="anonymous"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="../assets/js/header.js"></script>
+        <script src="../assets/js/footer.js"></script>
+        <script src="../assets/js/heroes.js"></script>
+        <script src="../assets/js/modal.js"></script>
+
+    </body>
+</html>

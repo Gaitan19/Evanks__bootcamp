@@ -1,0 +1,145 @@
+.Details {
+    background: $alice-blue;
+    padding: 80px 0;
+    width: 100%;
+
+    &-image {
+        height: auto;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    &-container {
+        &-post {
+            display: flex;
+            width: 100%;
+        }
+
+        &-comments {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 35px;
+            width: 100%;
+        }
+    }
+
+    &-left {
+        padding: 0 18px;
+    }
+
+    &-post {
+        margin-bottom: 30px;
+        padding: 0 15px;
+
+        &-text {
+            margin: 12px 0 0;
+            text-align: initial;
+        }
+    }
+
+    &-item {
+        border: 2px solid $white-smoke;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        max-width: 100%;
+        padding: 50px 30px;
+        width: 100%;
+
+        &-title {
+            color: $midnight;
+            font-family: $roboto;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-form {
+        width: 100%;
+
+        & input:focus-visible,
+        & textarea:focus-visible {
+            outline: none;
+        }
+    }
+
+    &-comment {
+        display: flex;
+        font-family: $roboto;
+        width: 50%;
+
+        &-picture {
+            height: auto;
+            width: 27%;
+        }
+
+        &-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        &-date {
+            color: $medium-gray;
+            font-size: 13px;
+        }
+
+        &-text {
+            color: $midnight;
+            margin-left: 5px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-left {
+            padding: 0;
+        }
+
+        &-item:last-child {
+            margin-bottom: 50px;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-container {
+            &-post {
+                flex-direction: column;
+            }
+        }
+
+        &-post {
+            padding-left: 0;
+        }
+
+        &-comment {
+            width: 75%;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-container-comments {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &-item {
+            padding: 20px;
+        }
+
+        &-comment {
+            flex-direction: column;
+            width: 80%;
+
+            &-picture {
+                width: 100%;
+            }
+
+            &-text {
+                margin: 10px 0;
+            }
+        }
+    }
+}

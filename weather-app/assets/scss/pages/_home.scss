@@ -1,0 +1,107 @@
+.Weather {
+    background-image: linear-gradient(
+        0deg,
+        $lightGray,
+        $lightGray 20%,
+        $thistle 60%,
+        $rebeccaPurple 90%,
+        $rebeccaPurple
+    );
+    height: 100%;
+    width: 100%;
+
+    &-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 90px 0 20px;
+
+        &-conditions {
+            background-color: var(--backgroundCard);
+            background-image: url(https://s.w-x.co/WeatherImages_Web/WeatherImage_PartlyCloudy-day_5.jpg?crop=16:9&width=800&format=pjpg&auto=webp&quality=70);
+            border-radius: 6px;
+            box-shadow: 0 0 12px 0 $backgroundBlack;
+            overflow: hidden;
+            width: 40%;
+        }
+
+        &-table {
+            width: 40%;
+        }
+    }
+
+    &-city {
+        align-items: baseline;
+        background: $backgroundShadow;
+        color: $white;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        padding: 10px 16px;
+        width: 100%;
+
+        &-location {
+            font-size: 1.25rem;
+        }
+
+        &-time {
+            font-size: 1.125rem;
+        }
+    }
+
+    &-current {
+        color: $white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 16px 0;
+
+        &-secondary {
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    &-message {
+        align-items: center;
+        border-radius: 6px;
+        color: $white;
+        display: flex;
+        font-size: 16px;
+        gap: 10px;
+        justify-content: center;
+        padding: 10px 16px;
+        &-link {
+            background: $backgroundShadow;
+            flex-grow: 1;
+        }
+    }
+
+    &-temperature {
+        font-size: 6rem;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    &-text {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+    &-table {
+        &-title {
+            background-color: $white;
+            border-bottom: 1px solid $whiteSmoke;
+            border-top: 1px solid $whiteSmoke;
+            font-size: 1.25rem;
+            margin: 0;
+            padding: 10px 26px;
+        }
+        &-temperature {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+    }
+}

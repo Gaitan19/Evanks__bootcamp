@@ -1,0 +1,100 @@
+.Button {
+    background: $background-button;
+    background-size: 200% auto;
+    border-radius: 50px;
+    box-shadow: $shadow;
+    color: $dark-slate;
+    cursor: pointer;
+    font-family: $roboto;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 40px;
+    min-width: 135px;
+    padding: 0 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: $transition;
+
+    &:hover {
+        background-position: right center;
+    }
+
+    &-play {
+        align-items: center;
+        background: $background-play;
+        border-radius: 50%;
+        box-sizing: content-box;
+        color: $black;
+        display: flex;
+        flex-direction: row;
+        font-size: 23px;
+        height: 60px;
+        justify-content: center;
+        justify-content: center;
+        min-width: auto;
+        padding: 5px;
+        width: 60px;
+    }
+
+    &-learn {
+        border-radius: 5px;
+    }
+
+    &-order {
+        background: none;
+        border: 2px solid;
+        border-image: $background-play;
+        border-image-slice: 1;
+        border-radius: 10px;
+        color: $white;
+        display: inline-block;
+        overflow: hidden;
+        padding: 0;
+        transition: $transition;
+        &:hover {
+            background: $background-play;
+            color: $black;
+        }
+    }
+
+    &-subscribe {
+        background: $background-midnight;
+        color: $white;
+        letter-spacing: normal;
+    }
+
+    &-view {
+        background: $white;
+        color: $midnight;
+        cursor: pointer;
+        font-family: $roboto;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 10px 15px;
+        transition: $transition;
+
+        &:hover {
+            background: $transparent-black;
+            color: $white;
+        }
+    }
+
+    &-form {
+        background: $transparent-black;
+        border-radius: 5px;
+        color: $white;
+        transition: $transition;
+
+        &:hover {
+            background: $medium-gray;
+        }
+    }
+
+    &-reply {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 2px 18px;
+        text-transform: uppercase;
+    }
+}

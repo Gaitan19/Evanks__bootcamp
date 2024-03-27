@@ -1,0 +1,116 @@
+.Gallery {
+    padding: 80px 0;
+    width: 100%;
+
+    &-content {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        width: 100%;
+
+        &-left {
+            display: flex;
+            flex-wrap: wrap;
+            width: 66.6%;
+        }
+
+        &-right {
+            width: 33.3%;
+        }
+
+        &-icon {
+            align-items: center;
+            background: $transparent-purple;
+            display: flex;
+            height: 0;
+            justify-content: center;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            transition: all 0.4s ease 0s;
+            width: 100%;
+        }
+
+        &-image {
+            cursor: pointer;
+            margin: 10px;
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+
+            &:hover {
+                .Gallery-container-icon {
+                    height: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &-image {
+        height: 100%;
+        width: 100%;
+
+        &-primary {
+            width: 47%;
+        }
+
+        &-secondary {
+            width: 97%;
+        }
+    }
+
+    &-icon {
+        color: $white;
+        font-size: 25px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-container-left {
+            justify-content: space-between;
+        }
+
+        &-image-primary {
+            width: 46%;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-container {
+            align-items: center;
+            flex-direction: column;
+            &-right,
+            &-left {
+                display: flex;
+                width: 100%;
+            }
+        }
+        &-image-primary {
+            width: 47%;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-image-primary {
+            width: 45%;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-image {
+            &-primary,
+            &-secondary {
+                width: 100%;
+            }
+        }
+        &-left {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}

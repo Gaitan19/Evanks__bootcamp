@@ -1,0 +1,53 @@
+.Banner {
+    background: none;
+    padding: 80px 0;
+    width: 100%;
+
+    &-container {
+        width: 50%;
+
+        &-video {
+            align-items: center;
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    &-image {
+        height: auto;
+        width: 100%;
+    }
+
+    &-right {
+        padding: 0 20px;
+    }
+
+    &-title {
+        font-size: 55px;
+        font-weight: bold;
+        line-height: 72px;
+        margin-bottom: 20px;
+    }
+
+    &-text {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-title {
+            font-size: 36px;
+            line-height: 45px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-container-image {
+            display: none;
+        }
+
+        &-right {
+            width: 100%;
+        }
+    }
+}

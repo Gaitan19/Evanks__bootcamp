@@ -1,0 +1,15 @@
+.switch-mode{
+    font-size: 25px;
+
+    &-icon{
+        font-size: 24px;
+    }
+
+    &-container{
+            align-items: center;
+            display: flex;
+            gap: 14px;
+            justify-content: space-between;
+    }
+}
+

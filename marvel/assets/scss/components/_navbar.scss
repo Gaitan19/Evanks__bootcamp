@@ -1,0 +1,116 @@
+.Navbar {
+    background: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &-container {
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &-logo {
+        height: 50px;
+        width: 138px;
+    }
+    &-right {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &-options {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &-item {
+        color: $white;
+        cursor: pointer;
+        font-family: $roboto;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-right: 45px;
+        position: relative;
+        text-transform: uppercase;
+        transition: $transition;
+
+        & a {
+            color: $white;
+        }
+
+        &:hover {
+            .Navbar-dropdown {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    &-dropdown {
+        background: $dark-gray;
+        box-shadow: $shaow-dropdown;
+        min-width: 200px;
+        opacity: 0;
+        position: absolute;
+        top: 30px;
+        transition: $transition;
+        visibility: hidden;
+
+        &-item {
+            border-bottom: 1px solid $light-gray;
+            padding: 10px 30px;
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-button {
+            display: none;
+        }
+
+        &-menu {
+            justify-content: flex-start;
+            margin-top: 10px;
+        }
+
+        &-options {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &-item {
+            border-bottom: 1px solid $white-smoke;
+            margin-bottom: 8px;
+            padding-top: 8px;
+            width: 100%;
+
+            &:last-child {
+                border: none;
+            }
+
+            &:hover {
+                .Navbar-dropdown {
+                    height: 100%;
+                }
+            }
+        }
+
+        &-dropdown {
+            background: $white-dashed;
+            height: 0;
+            position: static;
+            transition: none;
+        }
+    }
+}

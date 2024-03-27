@@ -1,0 +1,110 @@
+.Updates {
+    background: $background-midnight;
+    color: $white;
+    padding: 80px 0;
+
+    &-content {
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    &-container {
+        &-text {
+            align-items: flex-start;
+            background: $white;
+            color: $black;
+            display: flex;
+            flex-direction: column;
+            padding: 70px 28px 73px 70px;
+            width: 50%;
+        }
+    }
+
+    &-options {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &-option {
+        border: 3px solid;
+        border-image: $background-play;
+        border-image-slice: 1;
+        cursor: pointer;
+        padding: 15px 0;
+        text-align: center;
+        width: 30%;
+
+        & button {
+            color: $white;
+        }
+
+        &:hover {
+            background: $background-play;
+        }
+
+        &.Active {
+            background: $background-play;
+        }
+    }
+
+    &-items {
+        display: none;
+        flex-direction: row;
+        transition: $transition;
+        width: 100%;
+
+        &.Active {
+            display: flex;
+        }
+
+        &-picture {
+            height: auto;
+            width: 50%;
+        }
+
+        &-text {
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+    }
+
+    &-title {
+        border-bottom: 2px solid;
+        border-image: $background-play;
+        border-image-slice: 1;
+        font-size: 14px;
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+
+        &-secondary {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 30px;
+            text-transform: capitalize;
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-title-secondary {
+            font-size: 25px;
+            line-height: 35px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-items-picture {
+            display: none;
+        }
+
+        &-container-text {
+            padding: 24px;
+            width: 100%;
+        }
+    }
+}

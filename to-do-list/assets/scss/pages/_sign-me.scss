@@ -1,0 +1,23 @@
+.SignMe {
+    align-items: center;
+    background: $white;
+    border: 1px solid $dark;
+    border-radius: 8px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 40px 40px;
+
+    &-box {
+        align-items: center;
+        background: $apricot;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        justify-content: center;
+        padding: 12px 86px;
+        text-align: center;
+        width: 100%;
+    }
+}
