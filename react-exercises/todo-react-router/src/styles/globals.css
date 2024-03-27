@@ -1,0 +1,27 @@
+@import url("css/main.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green: #008f39;
+  --black: #000;
+  --white: #fff;
+  --dark: rgba(0, 0, 0, 0.1);
+  --light: rgba(255, 255, 255, 0.1);
+  --sky-blue: #70dbff;
+  --pink: #ff4da6;
+  --gray: #999999;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  justify-content: center;
+  padding: 0 0 50px 0;
+}

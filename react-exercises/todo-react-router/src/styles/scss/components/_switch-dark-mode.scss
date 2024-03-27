@@ -1,0 +1,58 @@
+.switch-mode {
+    font-size: 25px;
+
+    &-icon {
+        font-size: 24px;
+    }
+
+    &-container {
+        align-items: center;
+        display: flex;
+        gap: 14px;
+        justify-content: space-between;
+    }
+}
+
+.Switch {
+    display: inline-block;
+    height: 30px;
+    position: relative;
+    width: 60px;
+
+    &-check {
+        display: none;
+    }
+
+    &-slider {
+        background-color: $steal-blue;
+
+        border-radius: 30px;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 0.4s;
+
+        &:before {
+            background-color: $white;
+            border-radius: 50%;
+            bottom: 2px;
+            content: "";
+            height: 26px;
+            left: 2px;
+            position: absolute;
+            transition: 0.4s;
+            width: 26px;
+        }
+    }
+
+    &-check:checked + &-slider {
+        background-color: $medium-gray;
+    }
+
+    &-check:checked + &-slider::before {
+        transform: translateX(30px);
+    }
+}
