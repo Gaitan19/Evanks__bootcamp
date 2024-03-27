@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --green: #008f39;
+  --black: #000;
+  --white: #fff;
+  --dark: rgba(0,0,0,0.1);
+  --light: rgba(255,255,255,0.1);
+}
+
+.container {
+  background-color: var(--green);
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: url("../utils/images/picture.jpg");
+  background-size: cover;
+  height: 300px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.text-light {
+  color: var(--white);
+}
+
+.text-dark {
+  color: var(--black);
+}
+
+.text-position {
+  bottom: 130px;
+  left: 100px;
+  position: relative;
+}
+ 
+.effect{
+  height: 100%;;
+  transition: 0.5s;
+  width: 0%;
+}
+
+.card-light {
+  background-color: var(--dark);
+}
+
+.card-dark {
+  background-color: var(--light);
+}
+
+
+.card:hover .card-light{
+
+  transition: 0.5s;
+  width: 100%;
+}
+
+
+.card:hover .card-dark{
+
+  transition: 0.5s;
+  width: 100%;
+}
+
+.button{
+  height: 300px;
+  width: 500px;
+}
+
+.button2{
+  background-color: var(--green);
+  width: 300px;
+}
