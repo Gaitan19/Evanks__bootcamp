@@ -1,0 +1,50 @@
+.List {
+    align-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 100vh;
+    justify-content: flex-start;
+    width: 77%;
+
+    &-scroll {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    &-menu {
+        height: 10%;
+        width: 100%;
+    }
+    &-text {
+        font-family: $font;
+        font-size: 22px;
+    }
+
+    &-container {
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        height: 563px;
+        justify-content: space-between;
+        max-height: 563px;
+        min-height: 563px;
+        overflow-y: auto;
+        padding: 20px;
+        width: 77%;
+        width: 100%;
+
+        &-items {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            overflow-y: auto;
+        }
+    }
+}

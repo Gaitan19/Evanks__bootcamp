@@ -1,0 +1,20 @@
+.Button {
+    border: 0;
+    color: $black;
+    font-family: $font-Bebas;
+    font-size: 25px;
+    padding: 0;
+    &:hover {
+        color: $bright-orange;
+    }
+
+    &-favorites {
+        background: none;
+        border: none;
+        font-size: 25px;
+
+        &:hover {
+            color: $khaki;
+        }
+    }
+}

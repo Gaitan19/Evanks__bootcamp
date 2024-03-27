@@ -1,0 +1,28 @@
+.Nav {
+    align-items: center;
+    display: flex;
+    gap: 80px;
+    height: 10%;
+    width: 100%;
+
+    &-image {
+        height: 130px;
+        width: 130px;
+    }
+
+    &-menu {
+        display: flex;
+        gap: 80px;
+    }
+
+    &-item {
+        color: $black;
+        font-family: $font-Bebas;
+        font-size: 30px;
+
+        &:hover {
+            color: $bright-orange;
+            text-decoration: underline;
+        }
+    }
+}

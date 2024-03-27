@@ -1,0 +1,26 @@
+.Search {
+    background: $white;
+    border: 2px solid $black;
+    border-radius: 25px;
+    color: $black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 450px;
+    padding: 5px 10px;
+    width: 100%;
+
+    &-input {
+        border: none;
+        display: block;
+        font-family: $font;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        padding-left: 1rem;
+        width: 80%;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+}

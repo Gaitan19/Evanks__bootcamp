@@ -1,0 +1,62 @@
+.Pokemon {
+    &-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: flex-start;
+    }
+
+    &-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+        width: 100%;
+
+        &-container {
+            align-items: center;
+            background: $khaki;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px $transparent-black;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    &-tab {
+        background-color: transparent;
+        border: none;
+        border-radius: 5px;
+        color: $dark-gray;
+        cursor: pointer;
+        font-family: $font;
+        margin-right: 10px;
+        padding: 10px 20px;
+        transition:
+            background-color 0.3s,
+            font-family 0.3s;
+
+        &:hover {
+            background-color: $gold;
+            color: $white;
+        }
+
+        &-active {
+            background-color: $gold;
+            color: $white;
+            font-family: $font;
+        }
+
+        &-content {
+            width: 100%;
+        }
+    }
+
+    &-menu {
+        background: $khaki;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px $transparent-black;
+    }
+}

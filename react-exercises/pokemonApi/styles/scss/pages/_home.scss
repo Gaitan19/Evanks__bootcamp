@@ -1,0 +1,39 @@
+.Home {
+    align-items: center;
+    background: $transparent-black;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    margin: 36px 90px;
+    padding: 0px 120px 40px 120px;
+    &-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-text {
+        color: $black;
+        font-family: $font;
+        font-size: 32px;
+    }
+
+    &-description {
+        color: $black;
+        font-family: $font-Bebas;
+        font-size: 23px;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        list-style: disc;
+        margin: 15px 0;
+        text-align: justify;
+        width: 70%;
+    }
+}

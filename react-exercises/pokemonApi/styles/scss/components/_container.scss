@@ -1,0 +1,58 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+        gap: 5px;
+        margin-bottom: 50px;
+        padding: 16px 0;
+    }
+
+    &-search {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &-characteristics {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        min-width: 628px;
+    }
+
+    &-information {
+        align-items: center;
+        background: $gold;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 28px 0 20px 0;
+        padding: 30px 20px;
+        width: 80%;
+    }
+
+    &-descriptions {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        &-title {
+            font-size: 20px;
+        }
+
+        &-text {
+            font-size: 18px;
+            margin: 0 10px;
+            max-width: 258px;
+            text-align: center;
+        }
+    }
+
+    &-data {
+        max-height: 123px;
+        overflow-y: auto;
+    }
+}

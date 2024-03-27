@@ -1,0 +1,26 @@
+.Information {
+    color: $black;
+    font-family: $font;
+    gap: 18px;
+    margin-bottom: 50px;
+    padding: 16px 0;
+
+    &-icon {
+        background: $gray-400;
+        border-radius: 10px;
+        padding: 48px;
+    }
+
+    &-name {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: row;
+
+        font-size: 18px;
+        gap: 20px;
+    }
+}

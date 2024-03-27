@@ -1,0 +1,42 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [ "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "airbnb",
+    "prettier",
+    "next/core-web-vitals"],
+
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+        "prettier/prettier": ["error"],
+        "react/function-component-definition": "off",
+        "import/extensions": [
+          "warn",
+          {
+            "node": {
+              "extensions": [".js", ".jsx"]
+            }
+          }
+        ],
+        "arrow-body-style": "off",
+        "react/self-closing-comp": "off",
+        "import/no-unresolved": "off",
+        "react/jsx-no-useless-fragment": "off",
+        "react/button-has-type": "off",
+        "react/require-default-props": "off",
+        "jsx-a11y/label-has-associated-control": "off",
+        "react/jsx-no-constructed-context-values": "off",
+        "no-alert": "off",
+        "import/no-extraneous-dependencies": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "jsx-a11y/click-events-have-key-events": "off"
+    }
+}
