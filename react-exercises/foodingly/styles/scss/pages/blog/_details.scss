@@ -1,0 +1,357 @@
+.Details {
+    align-items: center;
+    background-color: $Gainsboro;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+    width: 100%;
+
+    &-content {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    &-container {
+        background: $white;
+        padding: 20px;
+
+        &-images {
+            display: flex;
+            padding-top: 30px;
+            width: 100%;
+        }
+    }
+
+    &-historical {
+        padding: 0 0.7rem;
+        width: 66.6%;
+
+        &-image {
+            height: auto;
+            padding: 0 0.5rem;
+            width: 50%;
+        }
+    }
+
+    &-recent {
+        display: flex;
+        padding-top: 25px;
+
+        &-circle {
+            color: $LawnGreen;
+            font-size: 6px;
+            margin: 0 7px;
+        }
+
+        &-date {
+            color: $LawnGreen;
+            cursor: pointer;
+            font-family: $font-secondary;
+            font-size: 14px;
+            line-height: 28px;
+            transition: all 0.3s ease-in-out 0.1s;
+
+            &:hover {
+                color: $LightSlateGray;
+            }
+        }
+
+        &-image {
+            height: auto;
+            padding-right: 10px;
+            width: 23%;
+        }
+
+        &-information {
+            padding-left: 10px;
+        }
+
+        &-text {
+            color: $black-color;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            transition: all 0.3s ease-in-out 0.1s;
+
+            &:hover {
+                color: $LawnGreen;
+            }
+        }
+    }
+
+    &-right {
+        padding: 0 0.7rem;
+        width: 33.3%;
+
+        &-title {
+            border-bottom: 1px solid $Gainsboro;
+            font-size: 24px;
+            font-weight: 500;
+            padding-bottom: 10px;
+        }
+
+        &-item {
+            background: $white;
+            border-radius: 6px;
+            box-shadow: $shadow-statistics;
+            margin-bottom: 30px;
+            padding: 30px 20px;
+            width: 100%;
+        }
+    }
+
+    &-tags {
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    &-tag {
+        background: $LightGainsboro;
+        border: none;
+        color: $black-color;
+        display: inline-flex;
+        margin-right: 10px;
+        margin-top: 15px;
+        padding: 7px 15px;
+        transition: all 0.3s ease-in-out 0.1s;
+
+        &:hover {
+            background: $LawnGreen;
+            color: $white;
+        }
+    }
+
+    &-shares {
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 30px;
+    }
+
+    &-social {
+        align-items: center;
+        background-color: $white;
+        border-radius: 50%;
+        box-shadow: $shadow-icons;
+        display: inline-flex;
+        height: 40px;
+        justify-content: center;
+        line-height: 30px;
+        margin-left: 15px;
+        text-align: center;
+        transition: background-color 0.3s ease-in-out;
+        width: 40px;
+
+        &:hover {
+            background-color: $LawnGreen;
+        }
+
+        &:hover .Details-icon {
+            color: $white;
+        }
+    }
+
+    &-icon {
+        color: $LawnGreen;
+        font-size: 18px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    &-image {
+        height: auto;
+
+        width: 100%;
+    }
+
+    &-title {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 45px;
+        padding-top: 30px;
+
+        &-secondary {
+            font-size: 24px;
+            font-weight: 500;
+            padding-top: 20px;
+        }
+    }
+
+    &-text {
+        color: $paragraph-color;
+        font-family: $font-secondary;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        padding-top: 20px;
+    }
+
+    &-circle {
+        color: $LawnGreen;
+        font-size: 18px;
+        padding-right: 7px;
+    }
+
+    &-instruction {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        padding-top: 13px;
+    }
+
+    &-comments {
+        padding-top: 60px;
+
+        &-counter {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+    }
+
+    &-comment {
+        border-bottom: 1px solid $LightGainsboro;
+        display: flex;
+        margin-bottom: 35px;
+        padding-bottom: 35px;
+        width: 100%;
+
+        &-picture {
+            height: auto;
+            padding-right: 22px;
+            width: 15%;
+        }
+
+        &-information {
+            padding-left: 20px;
+        }
+
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+
+        &-name {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        &-text {
+            color: $paragraph-color;
+            font-family: $font-secondary;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+        &-reply {
+            align-items: center;
+            background: none;
+            border: none;
+            color: $LawnGreen;
+            display: flex;
+            gap: 5px;
+            transition: all 0.3s ease-in-out 0.1s;
+
+            &:hover {
+                color: $black-color;
+            }
+        }
+    }
+
+    &-input {
+        background: $white;
+        border: none;
+        box-shadow: $shadow-input;
+        font-size: 16px;
+        height: 55px;
+        margin-bottom: 30px;
+        padding: 10px 22px;
+        width: 100%;
+
+        &:focus-visible {
+            border: 2px dashed $LawnGreen;
+            outline: none;
+        }
+
+        &-group {
+            width: 48.5%;
+        }
+
+        &-comment {
+            height: 168px;
+        }
+    }
+
+    &-form {
+        width: 100%;
+        &-title {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    @include media-breakpoint-down(xxl) {
+        &-content {
+            max-width: 1140px;
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-content {
+            max-width: 960px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-content {
+            flex-direction: column;
+            max-width: 720px;
+        }
+        &-historical,
+        &-right,
+        &-input-group {
+            width: 100%;
+        }
+
+        &-form-container {
+            flex-direction: column;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-content {
+            max-width: 720px;
+            max-width: 540px;
+        }
+
+        &-comment {
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+
+            &-picture {
+                height: 90px;
+                padding: 0;
+                width: 90px;
+            }
+
+            &-information {
+                padding: 20px 0 24px;
+            }
+        }
+    }
+}

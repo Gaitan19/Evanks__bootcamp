@@ -1,0 +1,68 @@
+.Banner {
+    background-image: url(https://foodingly.netlify.app/assets/img/banner/common-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 414px;
+    padding: 150px 0;
+    width: 100%;
+
+    &-content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+
+    &-title {
+        color: $white;
+        font-family: $font-options;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &-pages {
+        align-items: center;
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    &-light {
+        color: $Ivory;
+        font-family: $font-options;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-decoration: none;
+
+        &:hover {
+            color: $LawnGreen;
+        }
+    }
+
+    &-icon {
+        color: $white;
+        font-size: 7px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    &-item {
+        color: $white;
+        font-family: $font-options;
+        font-size: 16px;
+        font-weight: 400;
+        list-style: none;
+    }
+
+    @include media-breakpoint-down(lg) {
+        height: 414px;
+    }
+}

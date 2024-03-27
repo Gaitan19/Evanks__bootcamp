@@ -1,0 +1,169 @@
+.Food {
+    align-items: center;
+    background-color: $Gainsboro;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+    width: 100%;
+
+    &-content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    &-title {
+        color: $black-color;
+        font-family: $font-options;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 55px;
+        text-align: center;
+
+        &::after {
+            background: $LawnGreen;
+            content: "";
+            display: block;
+            height: 1px;
+            left: 50%;
+            margin-top: 15px;
+            position: absolute;
+            transform: translate(-50%, 50%);
+            width: 200px;
+        }
+    }
+
+    &-container {
+        display: flex;
+        width: 100%;
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            padding: 0 0.7rem;
+            width: 25%;
+        }
+
+        &-right {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 0 0.7rem;
+            width: 75%;
+        }
+
+        &-stars {
+            align-items: center;
+            display: flex;
+            margin-top: 15px;
+            width: 100%;
+        }
+    }
+
+    &-checkbox {
+        border-radius: 0.25em;
+        height: 1rem;
+        width: 1rem;
+    }
+
+    &-stars {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    &-star {
+        color: $LightGainsboro;
+        font-size: 18px;
+        margin-left: 6px;
+
+        &-green {
+            color: $LawnGreen;
+        }
+    }
+
+    &-slider {
+        color: $LawnGreen;
+        margin: 15px 5px 0;
+        width: 95%;
+    }
+
+    &-types {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 6px;
+        width: 90%;
+
+        &-text {
+            color: $black-color;
+            font-weight: 500;
+        }
+    }
+
+    &-item {
+        background: $white;
+        border: 1px solid $black-secondary;
+        border-radius: 6px;
+        margin-bottom: 30px;
+        padding: 20px 15px;
+
+        &-title {
+            border-bottom: 1px solid $black-secondary;
+            font-size: 16px;
+            font-weight: 500;
+            padding-bottom: 7px;
+        }
+    }
+
+    @include media-breakpoint-down(xxl) {
+        &-content {
+            max-width: 1140px;
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-content {
+            max-width: 960px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-content {
+            flex-direction: column;
+            max-width: 720px;
+        }
+
+        &-container {
+            flex-direction: column;
+
+            &-left,
+            &-right {
+                width: 100%;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-content {
+            max-width: 720px;
+            max-width: 540px;
+        }
+
+        &-products {
+            width: 100%;
+
+            & .Products-card {
+                width: 47.5%;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-products .Products-card {
+            width: 100%;
+        }
+    }
+}

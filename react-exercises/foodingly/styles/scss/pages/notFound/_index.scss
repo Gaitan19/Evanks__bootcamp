@@ -1,0 +1,48 @@
+.Not-found {
+    align-items: center;
+    background: rgb(52, 56, 60);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+
+    &-content {
+        background: $white;
+        border-radius: 8px;
+        box-shadow: $shadow-food;
+        color: $black;
+        display: flex;
+        flex-direction: column;
+        max-width: 364px;
+        padding: 24px;
+        position: relative;
+        width: 75%;
+    }
+
+    &-title {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    &-container {
+        border-bottom: 2px solid $LightGray;
+        padding-bottom: 15px;
+    }
+
+    &-text {
+        margin: 0.7rem 0;
+    }
+
+    &-link {
+        color: $black-color;
+        font-weight: 600;
+        line-height: 24px;
+        margin: 8px;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

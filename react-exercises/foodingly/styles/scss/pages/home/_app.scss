@@ -1,0 +1,139 @@
+.App {
+    background-color: $white;
+
+    &-content {
+        align-items: flex-start;
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 auto;
+        max-width: 1416px;
+        padding: 80px 80px;
+    }
+
+    &-info {
+        padding-top: 50px;
+        width: 720px;
+    }
+
+    &-title {
+        font-family: $font-options;
+        font-size: 53px;
+        font-weight: 500;
+        line-height: 80px;
+        margin-bottom: 20px;
+        max-width: 665px;
+    }
+
+    &-text {
+        color: $paragraph-color;
+        font-family: $font-secondary;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 35px;
+        margin-bottom: 35px;
+        max-width: 696px;
+    }
+
+    &-image {
+        background-image: url("https://foodingly.netlify.app/assets/img/promotion/app.png");
+        height: 556px;
+        width: 446px;
+    }
+
+    &-buttons {
+        align-items: center;
+        display: flex;
+        gap: 22px;
+        justify-content: flex-start;
+    }
+
+    &-store {
+        background-image: url("https://foodingly.netlify.app/assets/img/promotion/apple-store-icon.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 6px;
+        height: 58px;
+        width: 167px;
+    }
+
+    &-google {
+        background-image: url("https://foodingly.netlify.app/assets/img/promotion/google-play-store-icon.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 55px;
+        width: 159px;
+    }
+
+    @media (max-width: $laptod) {
+        &-content {
+            padding: 80px 80px;
+        }
+        &-info {
+            width: 50%;
+        }
+
+        &-title {
+            font-size: 41px;
+            line-height: 60px;
+        }
+
+        &-image {
+            width: 50%;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-info {
+            width: 100%;
+        }
+
+        &-content {
+            justify-content: center;
+            padding: 80px;
+            width: 100%;
+        }
+
+        &-title {
+            font-size: 41px;
+            line-height: 60px;
+        }
+
+        &-image {
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-content {
+            padding: 40px;
+        }
+
+        &-info {
+            padding-top: 0;
+            width: 100%;
+        }
+
+        &-title {
+            font-size: 24px;
+            line-height: 40px;
+        }
+
+        &-text {
+            font-size: 14px;
+            line-height: 28px;
+            margin-bottom: 30px;
+        }
+
+        &-appleButton {
+            height: 37.36px;
+            width: 107.59px;
+        }
+
+        &-googleButton {
+            height: 37.36px;
+            width: 107.59px;
+        }
+    }
+}

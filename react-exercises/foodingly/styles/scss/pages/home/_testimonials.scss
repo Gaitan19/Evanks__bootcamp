@@ -1,0 +1,178 @@
+.Testimonials {
+    align-items: center;
+    background-color: $Gainsboro;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 100px;
+
+    &-content {
+        margin: 0 auto;
+        max-width: 1416px;
+        width: 100%;
+    }
+
+    &-title {
+        color: $black-color;
+        font-family: $font-options;
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &-text {
+        color: $black-color;
+        font-family: $font-options;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 55px;
+        text-align: center;
+
+        &::after {
+            background: $LawnGreen;
+            content: "";
+            display: block;
+            height: 1px;
+            left: 50%;
+            margin-top: 15px;
+            position: absolute;
+            transform: translate(-50%, 50%);
+            width: 200px;
+        }
+    }
+
+    &-carousel {
+        background: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    &-card {
+        background-color: $white;
+        border-radius: 12px;
+        height: 300px;
+        margin-bottom: 30px;
+        margin-right: 10px;
+        max-width: 465.33px;
+        padding: 45px 20px 20px;
+
+        &-header {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-date {
+            color: $black-color;
+            font-family: $font-options;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        &-excellent {
+            color: $black-color;
+            font-family: $font-options;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 3.5px;
+            text-align: center;
+        }
+        &-stars {
+            display: flex;
+        }
+
+        &-icon {
+            color: $LawnGreen;
+            font-size: 14px;
+            list-style: none;
+            padding: 0 2px;
+        }
+
+        &-image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 100%;
+            height: 70px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            object-fit: cover;
+            width: 70px;
+        }
+
+        &-body {
+            bottom: 25%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        &-name {
+            color: $black-color;
+            font-family: $font-options;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        &-text {
+            color: $paragraph-color;
+            font-family: $font-secondary;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: center;
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-card {
+            height: 401.19px;
+            padding: 65px 20px 0px;
+
+            &-text {
+                padding: 0 30px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-card {
+            height: 373.19px;
+            width: 340px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 0;
+
+        &-content {
+            padding: 40px 16px 60px;
+            width: 100%;
+        }
+
+        &-text {
+            font-size: 26px;
+        }
+
+        &-card {
+            height: 312.38px;
+            margin-right: 10px;
+            padding-top: 25px;
+            width: 98%;
+
+            &-header {
+                margin-top: 20px;
+            }
+
+            &-text {
+                padding: 0;
+                text-align: center;
+            }
+        }
+    }
+}

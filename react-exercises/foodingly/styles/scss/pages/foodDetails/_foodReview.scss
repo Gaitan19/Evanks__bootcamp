@@ -1,0 +1,26 @@
+.Review {
+    padding: 0;
+
+    &-content {
+        align-items: flex-start;
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        @include media-breakpoint-down(lg) {
+            flex-wrap: wrap;
+        }
+
+        @include media-breakpoint-down(md) {
+            align-items: center;
+            flex-direction: column;
+
+            & .Testimonials-card {
+                width: 100%;
+            }
+        }
+    }
+}

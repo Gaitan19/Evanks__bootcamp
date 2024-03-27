@@ -1,0 +1,85 @@
+.Cart {
+    width: 34%;
+
+    &-title {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &-products {
+        max-height: 224px;
+        overflow-y: auto;
+    }
+
+    &-product {
+        align-items: center;
+        border-bottom: 1px dashed $MintCream;
+        display: flex;
+        gap: 24px;
+        justify-content: flex-start;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+
+        &:hover {
+            .Cart-delete {
+                opacity: 1;
+            }
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            margin-right: 13px;
+            min-width: 153.02px;
+        }
+
+        &-price {
+            font-size: 14px;
+        }
+    }
+
+    &-name {
+        color: $LawnGreen;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 400;
+        max-width: 153.02px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+            color: $black-color;
+        }
+    }
+
+    &-image {
+        height: 34.63px;
+        width: 55px;
+    }
+
+    &-delete {
+        background: none;
+        border: none;
+        opacity: 0;
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    &-total {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &-text {
+            font-family: $font-roboto;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,198 @@
+.Navbar {
+    display: flex;
+    justify-content: center;
+
+    &-sticky {
+        position: sticky;
+        top: 0;
+        transition: top 0.3s;
+        z-index: 100;
+    }
+
+    &-top {
+        background-color: $LawnGreen;
+        border-bottom: 1px solid $GhostWhite;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        margin-bottom: 0;
+
+        padding: 0;
+    }
+
+    &-icons {
+        color: $white;
+        padding-left: 5px;
+    }
+
+    &-contact {
+        color: $white;
+        font-size: 14px;
+        margin-left: 25px;
+        &:hover {
+            color: $black;
+        }
+    }
+
+    &-options {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        justify-content: flex-end;
+        margin-bottom: 0;
+        padding: 0;
+        text-align: end;
+    }
+
+    &-menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    &-account {
+        color: $white;
+        font-size: 14px;
+        font-weight: 500;
+        &:hover {
+            color: $black;
+        }
+    }
+
+    &-content {
+        align-items: center;
+        display: flex;
+        gap: 40px;
+        justify-content: flex-start;
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    &-brand {
+        margin-left: 10%;
+    }
+
+    &-container {
+        &-options {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            justify-content: center;
+        }
+
+        &-tools {
+            align-content: flex-start;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+
+    &-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        width: 100%;
+    }
+
+    &-collapse {
+        &-options {
+            margin-right: 62%;
+        }
+        &-tools {
+            margin-right: 219%;
+        }
+    }
+
+    @media (max-width: $xl) {
+        &-container-tools {
+            padding: 0;
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-toogle {
+            border: none;
+            & span {
+                background-image: url(https://e7.pngegg.com/pngimages/233/724/png-clipart-computer-icons-dots-three-buttons-text-monochrome.png);
+            }
+
+            &:focus {
+                border: none;
+                box-shadow: none;
+            }
+
+            &-options {
+                border: none;
+                &:focus {
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        &-content {
+            justify-content: space-between;
+            padding: 0 100px 0 0;
+        }
+        &-menu {
+            flex-direction: row-reverse;
+            width: auto;
+        }
+
+        &-item {
+            border-top: 1px solid $LightCyan;
+            padding: 1em 5%;
+        }
+
+        &-nav {
+            background: $white;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            left: 10%;
+            max-height: 238px;
+            overflow-y: scroll;
+            position: absolute;
+            width: 79%;
+
+            &-tools {
+                align-items: center;
+                background: $white;
+                display: flex;
+                flex-direction: column-reverse;
+                max-width: 198px;
+                min-width: 198px;
+                padding: 15px;
+                position: absolute;
+                right: 12%;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-icons {
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-top {
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-container-options {
+            padding: 0;
+        }
+    }
+}

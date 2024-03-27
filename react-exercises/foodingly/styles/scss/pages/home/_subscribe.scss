@@ -1,0 +1,123 @@
+.Subscribe {
+    background-color: $white;
+
+    &-content {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1416px;
+        padding: 80px 0;
+    }
+
+    &-info {
+        align-items: center;
+        display: flex;
+        gap: 30px;
+        width: 50%;
+    }
+
+    &-image {
+        height: 104.03px;
+        width: 123.39px;
+    }
+
+    &-text {
+        color: $black-color;
+        font-family: $font-options;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 11px;
+
+        &:last-child {
+            font-size: 36px;
+            line-height: 40px;
+            margin-bottom: 0;
+        }
+    }
+
+    &-form {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+    }
+
+    &-input {
+        border: 2px dashed $LightGray;
+        font-size: 16px;
+        font-weight: 400;
+        height: 55px;
+        padding: 10px 22px;
+        width: 427.5px;
+
+        &:focus {
+            border: 2px dashed $LawnGreen;
+            outline: none;
+        }
+    }
+
+    @media (max-width: $laptod) {
+        &-content {
+            padding: 80px 50px;
+        }
+
+        &-image {
+            height: 66.03px;
+            width: 76.39px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-content {
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        &-info {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        &-form {
+            width: 100%;
+        }
+
+        &-image {
+            height: 88.72px;
+            width: 104.39px;
+        }
+
+        &-input {
+            width: 100%;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-content {
+            padding: 40px 10px;
+        }
+
+        &-info {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &-image {
+            height: 104.41px;
+            width: 122.84px;
+        }
+
+        &-text {
+            font-size: 16px;
+            &:last-child {
+                font-size: 29px;
+                line-height: 40px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

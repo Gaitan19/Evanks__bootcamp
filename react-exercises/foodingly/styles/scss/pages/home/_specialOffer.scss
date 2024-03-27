@@ -1,0 +1,69 @@
+.Special {
+    background-image: url("https://foodingly.netlify.app/assets/img/common/counter_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    padding: 80px 0;
+    width: 100%;
+
+    &-content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 60px;
+        width: 50%;
+    }
+
+    &-text {
+        color: $black-color;
+        font-family: $font-options;
+        font-size: 53px;
+        font-weight: 500;
+        line-height: 80px;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+
+    &-title {
+        color: $black-color;
+        font-family: $font-options;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &-image {
+        background-image: url("https://foodingly.netlify.app/assets/img/promotion/promo-1.png");
+        height: 321px;
+        width: 546px;
+    }
+
+    @media (max-width: $xxl) {
+        &-text {
+            font-size: 30px;
+            line-height: 50px;
+            margin-bottom: 30px;
+            margin-right: 35px;
+            padding-top: 10px;
+        }
+    }
+
+    @media (max-width: $xl) {
+        &-content {
+            width: 50%;
+        }
+    }
+
+    @media (max-width: $md) {
+        &-content {
+            width: 100%;
+        }
+        &-text {
+            margin-right: 0px;
+        }
+    }
+}

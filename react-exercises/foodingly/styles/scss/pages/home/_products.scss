@@ -1,0 +1,315 @@
+.Products {
+    background-color: $Gainsboro;
+
+    &-content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1420px;
+        padding: 80px 0;
+    }
+
+    &-text {
+        color: $black-color;
+        font-family: $font-options;
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 60px;
+
+        &::after {
+            background: $LawnGreen;
+            content: "";
+            display: block;
+            height: 1px;
+            left: 50%;
+            margin-top: 15px;
+            position: absolute;
+            transform: translate(-50%, 50%);
+            width: 200px;
+        }
+    }
+
+    &-title {
+        color: $black-color;
+        font-family: $font-options;
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    &-list {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    &-filters {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        justify-content: center;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    &-card {
+        background-color: $white;
+        border-radius: 11px;
+        height: 400px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        position: relative;
+        width: 336px;
+
+        &:hover {
+            box-shadow: $shadow-product;
+
+            .Products-card-image {
+                transform: scale(1.2);
+            }
+        }
+
+        &-header {
+            background-color: $white;
+            border-radius: 11px;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+        }
+
+        &-body {
+            padding: 20px 15px;
+        }
+
+        &-image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 198px;
+            object-fit: cover;
+            transition: all 0.4s ease-in-out;
+            width: 100%;
+        }
+
+        &-name {
+            color: $black-color;
+            cursor: pointer;
+            font-family: $font-options;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            transition: color 0.4s ease-in-out;
+
+            &:hover {
+                color: $LawnGreen;
+            }
+        }
+
+        &-discount {
+            align-items: center;
+            background-color: $LawnGreen;
+            border-radius: 100%;
+            bottom: 20px;
+            color: $white;
+            display: flex;
+            font-family: $font-options;
+            font-size: 16px;
+            font-weight: 500;
+            height: 45px;
+            justify-content: center;
+            line-height: 45px;
+            position: absolute;
+            right: 40px;
+            text-align: end;
+            width: 45px;
+        }
+
+        &-info {
+            margin-bottom: 10px;
+        }
+
+        &-rating {
+            color: $LawnGreen;
+            font-family: $font-secondary;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+        &-review {
+            color: $black-color;
+            font-family: $font-secondary;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28px;
+            margin-left: 10px;
+        }
+
+        &-price {
+            font-family: $font-options;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 0;
+        }
+
+        &-add {
+            align-items: center;
+            bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            position: absolute;
+            width: 100%;
+        }
+    }
+
+    @include media-breakpoint-down(xxl) {
+        &-content {
+            padding: 80px 3%;
+        }
+
+        &-list {
+            margin-left: 10px;
+        }
+
+        &-card {
+            height: auto;
+            width: 261px;
+
+            &-image {
+                height: 157px;
+            }
+
+            &-info {
+                margin-bottom: 41px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-card {
+            height: auto;
+            width: 214px;
+
+            &-image {
+                height: 123px;
+            }
+
+            &-name {
+                max-width: 184px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-content {
+            padding: 80px 5%;
+        }
+
+        &-list {
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+
+        &-filters {
+            gap: 15px;
+        }
+
+        &-card {
+            margin-bottom: 10px;
+            width: 48%;
+
+            &-header {
+                align-content: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            &-image {
+                height: 197px;
+                width: 314px;
+            }
+
+            &-name {
+                max-width: 214px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-content {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 80px 0;
+        }
+
+        &-list {
+            width: 85%;
+        }
+
+        &-filters {
+            padding: 0 28px;
+        }
+
+        &-card {
+            width: 270px;
+
+            &-header {
+                display: flex;
+                justify-content: center;
+            }
+
+            &-image {
+                height: 141px;
+                width: 224px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-content {
+            padding: 60px 0;
+            width: 100%;
+        }
+
+        &-text {
+            font-size: 26px;
+        }
+
+        &-list {
+            justify-content: center;
+            padding: 0;
+            width: 92%;
+        }
+
+        &-filters {
+            gap: 15px;
+            padding: 0 10px;
+        }
+
+        &-card {
+            width: 100%;
+
+            &-name {
+                font-size: 16px;
+            }
+
+            &-image {
+                height: 238px;
+                width: 379px;
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.Hero {
+    background-image: url("https://foodingly.netlify.app/assets/img/banner/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.5;
+    object-fit: cover;
+    padding: 238px 0;
+    width: 100%;
+
+    &-content {
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        margin-top: 20px;
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    &-title {
+        color: $black-color;
+        display: block;
+        font-family: $font-options;
+        font-size: 83px;
+        font-weight: 600;
+        line-height: 90px;
+        margin-bottom: 0;
+        max-width: 700px;
+        padding-bottom: 20px;
+    }
+
+    &-text {
+        color: $black-color;
+        font-family: $font-secondary;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    &-image {
+        position: relative;
+        text-align: right;
+    }
+
+    &-banner {
+        height: auto;
+        max-width: 100%;
+        width: 80%;
+    }
+
+    @media (max-width: $xxl) {
+        padding: 160px 0 80px 0;
+
+        &-content {
+            justify-content: initial;
+            padding: 0;
+        }
+
+        &-container {
+            padding: 0 10px;
+        }
+
+        &-title {
+            font-size: 65px;
+            line-height: 75px;
+        }
+
+        &-image {
+            padding-top: 30px;
+            width: 70%;
+        }
+    }
+
+    @media (max-width: $md) {
+        padding: 150px 0 0 0;
+
+        &-content {
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 0 5.74rem;
+        }
+
+        &-title {
+            font-size: 52px;
+        }
+        &-image {
+            padding: 30px 0;
+            width: 60%;
+        }
+        &-banner {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: $mobileL) {
+        padding: 30px 0 50px 0;
+        &-content {
+            padding: 0 1.7rem;
+        }
+
+        &-title {
+            font-size: 45px;
+            line-height: 75px;
+        }
+
+        &-image {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,152 @@
+.Authors {
+    align-items: center;
+    background-color: $Gainsboro;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+    width: 100%;
+
+    &-content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    &-pagination {
+        margin-top: 20px;
+
+        & li {
+            background: $white;
+            margin: 0 10px;
+        }
+
+        & li button {
+            border-radius: 0;
+            color: $LawnGreen;
+            margin: 0;
+            padding: 0;
+
+            &:hover {
+                background: $LawnGreen;
+                border-radius: 0;
+                color: $white;
+            }
+        }
+    }
+
+    &-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &-image {
+        height: auto;
+        width: 100%;
+    }
+
+    &-container {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    &-information {
+        align-items: center;
+        display: flex;
+        padding-top: 20px;
+    }
+
+    &-picture {
+        margin-right: 15px;
+    }
+
+    &-circle {
+        color: $paragraph-color;
+        font-size: 6px;
+        margin: 0 8px;
+    }
+
+    &-time {
+        color: $paragraph-color;
+        font-size: 14px;
+        padding: 4px 0 0 0;
+    }
+
+    &-name {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &-date {
+        color: $LawnGreen;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.3s ease-in-out 0.1s;
+
+        &:hover {
+            color: $paragraph-color;
+        }
+    }
+
+    &-card {
+        background-color: $white;
+        border-radius: 12px 12px 0 0;
+        box-shadow: $shadow;
+        margin: 45px 10px 0px;
+        overflow: hidden;
+        position: relative;
+        transition: 0.4s all ease-in-out;
+        width: 31.3%;
+
+        &-text {
+            color: $paragraph-color;
+            font-family: $font-secondary;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            padding-top: 13px;
+        }
+
+        &-title {
+            color: $black-color;
+            font-family: $font-options;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 35px;
+            margin-bottom: 10px;
+            transition: color ease-in-out 0.3s;
+
+            &:hover {
+                color: $LawnGreen;
+            }
+        }
+
+        &-info {
+            padding: 25px 5px 5px 10px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-content {
+            max-width: 720px;
+        }
+        &-card {
+            width: 46.3%;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-content {
+            max-width: 720px;
+            max-width: 540px;
+        }
+
+        &-card {
+            width: 100%;
+        }
+    }
+}

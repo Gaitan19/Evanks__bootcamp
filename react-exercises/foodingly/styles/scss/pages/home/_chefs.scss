@@ -1,0 +1,128 @@
+.Chefs {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+
+    &-card {
+        background-color: $white;
+        border: 5px solid $white;
+        box-shadow: $shadow;
+        height: 350.81px;
+        margin-bottom: 30px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        width: 336px;
+
+        &:hover {
+            .Chefs-info {
+                opacity: 1;
+                transform: translateY(0px);
+                transition: 0.4s all ease-in-out;
+            }
+        }
+    }
+
+    &-image {
+        background-position: center center;
+        height: 100%;
+        width: 100%;
+    }
+
+    &-info {
+        background-color: $white;
+        bottom: 0;
+        box-shadow: $shadow;
+        height: 85px;
+        max-width: 100%;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        transform: translateY(80px);
+        transition: 0.4s all ease-in-out;
+        width: 100%;
+    }
+
+    &-icons {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    &-link {
+        background-color: $white;
+        border-radius: 50%;
+        height: 30px;
+        line-height: 30px;
+        list-style: none;
+        padding: 5px;
+        position: relative;
+        top: -15px;
+        transition: background-color 0.3s ease-in-out;
+        width: 30px;
+
+        &:hover {
+            background-color: $LawnGreen;
+            .Chefs-icon {
+                color: $white;
+            }
+        }
+    }
+
+    &-icon {
+        box-shadow: $shadow;
+        color: $LawnGreen;
+        font-size: 18px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    &-name {
+        bottom: 14px;
+        color: $LawnGreen;
+        font-family: $font-options;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 0;
+        position: relative;
+    }
+
+    &-profession {
+        bottom: 10px;
+        color: $paragraph-color;
+        font-family: $font-secondary;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 28px;
+        position: relative;
+    }
+
+    @media ($laptod) {
+        &-card {
+            height: 255px;
+            width: 216px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        gap: 28px;
+
+        &-card {
+            height: 340px;
+            margin-bottom: 0;
+            width: 326px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-card {
+            height: 354.41px;
+            margin-bottom: 10px;
+            width: 365px;
+        }
+    }
+}

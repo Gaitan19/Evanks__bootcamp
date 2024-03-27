@@ -1,0 +1,47 @@
+.Dropdown {
+    display: flex;
+    gap: 5px;
+
+    &-toggle {
+        align-items: center;
+        background-color: $transparent;
+        border: none;
+        color: $white;
+        display: flex;
+        flex-direction: row;
+        font-family: $font-options;
+        font-size: 14px;
+        font-weight: 500;
+        gap: 3px;
+        line-height: $font-options;
+        padding: 0;
+        padding-right: 15px;
+
+        &:hover {
+            background-color: $transparent;
+
+            color: $black;
+        }
+    }
+    &-menu {
+        background-color: $white;
+        border: 0;
+        border-radius: 5px;
+        box-shadow: 0 0 1.25rem $SlateGray;
+        margin-top: 5px;
+        padding: 0;
+        transform: translate(-80px, 25px);
+        z-index: 9999;
+    }
+
+    &-options {
+        border-bottom: 1px solid $WhiteSmoke;
+        color: $paragraph-color;
+        padding: 10px 20px;
+
+        &:hover {
+            background-color: $AliceBlue;
+            color: $black;
+        }
+    }
+}

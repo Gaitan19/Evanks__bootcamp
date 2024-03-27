@@ -1,0 +1,84 @@
+.Faqs {
+    &-container {
+        display: flex;
+        width: 100%;
+
+        &-left {
+            padding: 0 0.5rem;
+            width: 66.6%;
+        }
+
+        &-right {
+            padding: 0 0.5rem;
+            width: 33.3%;
+        }
+    }
+    &-item {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    &-accordion {
+        margin-top: 30px;
+        width: 100%;
+
+        &-body {
+            color: $paragraph-color;
+            font-family: $font-secondary;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+        &-item {
+            margin-bottom: 30px;
+        }
+    }
+
+    &-call {
+        align-items: center;
+        background: $LawnGreen;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+        padding: 90px 30px;
+
+        &-image {
+            height: auto;
+            max-width: 100%;
+        }
+
+        &-text {
+            color: $white;
+            font-size: 16px;
+            font-weight: 400;
+            padding-top: 20px;
+        }
+
+        &-link {
+            color: $white;
+            font-size: 30px;
+            font-weight: 500;
+            padding-top: 20px;
+            transition: $transition;
+
+            &:hover {
+                color: $black-color;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-container {
+            flex-direction: column;
+            &-left,
+            &-right {
+                width: 100%;
+            }
+        }
+    }
+}

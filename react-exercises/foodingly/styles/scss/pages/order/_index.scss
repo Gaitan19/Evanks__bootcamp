@@ -1,0 +1,89 @@
+.Order {
+    &-content {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.5rem;
+    }
+
+    &-title {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+
+    &-text {
+        color: $paragraph-color;
+        font-family: $font-secondary;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        max-width: 496px;
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+
+    &-container {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &-inputs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 0.5rem;
+            width: 100%;
+        }
+
+        &-link {
+            margin-bottom: 15px;
+            padding-top: 1.5rem;
+        }
+    }
+
+    &-checkbox {
+        border-radius: 0.25rem;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+
+    &-form {
+        display: flex;
+        padding: 45px 20px 20px;
+        width: 100%;
+    }
+
+    &-inputs {
+        background: $white;
+        border: 2px dashed $LightGray;
+
+        box-shadow: $shadow-input;
+        font-size: 16px;
+        margin-bottom: 30px;
+        padding: 10px 30px;
+        width: 49.3%;
+
+        &:focus-visible {
+            border: 2px dashed $LawnGreen;
+            outline: none;
+        }
+    }
+
+    &-links {
+        color: $LawnGreen;
+        margin: 0 3px;
+        transition: $transition;
+
+        &:hover {
+            color: $black-color;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-inputs {
+            width: 100%;
+        }
+    }
+}

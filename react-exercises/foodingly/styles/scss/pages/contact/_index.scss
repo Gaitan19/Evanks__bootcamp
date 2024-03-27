@@ -1,0 +1,181 @@
+.Contact {
+	align-items: center;
+	background-color: $Gainsboro;
+	display: flex;
+	flex-direction: column;
+	padding-top: 80px;
+	width: 100%;
+
+	&-content {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 1440px;
+		width: 100%;
+	}
+
+	&-title {
+		color: $black-color;
+		font-family: $font-options;
+		font-size: 36px;
+		font-weight: 500;
+		line-height: 40px;
+		margin-bottom: 55px;
+		text-align: center;
+
+		&::after {
+			background: $LawnGreen;
+			content: "";
+			display: block;
+			height: 1px;
+			left: 50%;
+			margin-top: 15px;
+			position: absolute;
+			transform: translate(-50%, 50%);
+			width: 200px;
+		}
+	}
+
+	&-form {
+		padding-bottom: 70px;
+	}
+
+	&-phone {
+		display: flex;
+		justify-content: space-between;
+		padding: 35px 20px;
+		width: 100%;
+	}
+
+	&-text {
+		font-size: 30px;
+		font-weight: 500;
+	}
+
+	&-number {
+		color: $LawnGreen;
+		&:hover {
+			color: $black-color;
+		}
+	}
+
+	&-cards {
+		display: flex;
+	}
+
+	&-card {
+		align-items: center;
+		background-color: $white;
+		border-radius: 12px;
+		box-shadow: $shadow-statistics;
+		display: flex;
+		flex-direction: column;
+		margin: 0 0.7rem;
+		padding: 30px 17px;
+		width: 25%;
+
+		&-title {
+			font-size: 16px;
+			font-weight: 500;
+			font-weight: 500;
+			padding-bottom: 15px;
+		}
+		&-city {
+			font-size: 24px;
+			font-weight: 500;
+			padding-bottom: 20px;
+		}
+
+		&-text {
+			color: $paragraph-color;
+			font-family: $font-secondary;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 28px;
+			padding-bottom: 15px;
+			text-align: center;
+		}
+
+		&-view {
+			color: $LawnGreen;
+			font-weight: 600;
+			transition: all 0.3s ease-in-out 0.1s;
+
+			&:hover {
+				color: $black-color;
+			}
+		}
+	}
+
+	&-message {
+		padding: 80px 0 10px;
+
+		&-form {
+			background-color: $white;
+			border-radius: 12px;
+			box-shadow: $shadow-statistics;
+			margin: 0 auto;
+			max-width: 936px;
+			padding: 35px;
+			position: relative;
+			width: 100%;
+		}
+
+		&-input {
+			background: $white;
+			border: 2px dashed $LightGray;
+			box-shadow: $shadow-input;
+			font-size: 16px;
+			height: 55px;
+			margin-bottom: 30px;
+			padding: 10px 22px;
+			width: 100%;
+
+			&:focus-visible {
+				border: 2px dashed $LawnGreen;
+				outline: none;
+			}
+		}
+
+		&-task {
+			height: 144px;
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		&-content {
+			max-width: 720px;
+		}
+
+		&-cards {
+			flex-wrap: wrap;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: var(--bs-gutter-x, 0.75rem);
+			padding-right: var(--bs-gutter-x, 0.75rem);
+		}
+
+		&-card {
+			margin-bottom: 30px;
+			width: 46%;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&-content {
+			max-width: 720px;
+			max-width: 540px;
+		}
+
+		&-card {
+			width: 100%;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		&-phone {
+			flex-direction: column;
+		}
+	}
+}

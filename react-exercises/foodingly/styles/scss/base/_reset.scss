@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  border-top: 0;
+  color: inherit;
+  margin: none;
+  opacity: 1;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.form-check-input {
+  &[type="checkbox"] {
+    border-radius: 1.25em;
+  }
+
+  &:focus {
+    border-color: #86b7fe;
+    box-shadow: none;
+    outline: 0;
+  }
+}
+.btn.show {
+  background-color: $transparent;
+  color: $black;
+}
+
+.offcanvas-sm,
+.offcanvas-md,
+.offcanvas-lg,
+.offcanvas-xl,
+.offcanvas-xxl,
+.offcanvas,
+.offcanvas.offcanvas-end {
+  width: 320px;
+  width: 331px;
+}
+
+.offcanvas-body {
+  padding: 0 15px;
+}
+
+.Mui-selected {
+  border-radius: 0;
+}
+
+.css-nnid7-MuiSlider-valueLabel {
+  background: none;
+  color: $DarkSlateGray;
+
+  &.MuiSlider-valueLabelOpen {
+    transform: translateY(100%) scale(1);
+  }
+}
+
+.accordion-button {
+  background-color: $white;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:not(.collapse) {
+    background-color: $white;
+  }
+}

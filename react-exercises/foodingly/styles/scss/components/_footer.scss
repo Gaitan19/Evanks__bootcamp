@@ -1,0 +1,268 @@
+.Footer {
+    background-color: $white;
+    width: 100%;
+
+    &-container {
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+        padding: 100px 0;
+        padding-left: var(--bs-gutter-x, 1.75rem);
+        padding-right: var(--bs-gutter-x, 1.75rem);
+        width: 100%;
+    }
+
+    &-title {
+        border-bottom: 1px solid $LawnGreen;
+        color: $black-color;
+        display: inline-block;
+        font-family: $font-options;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+    }
+
+    &-help {
+        line-height: 1.5;
+        width: 25%;
+
+        &-info {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            margin-top: 5px;
+        }
+
+        &-item {
+            border-left: 2px solid $LawnGreen;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 24px;
+            padding-left: 9px;
+            padding-top: 5px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &-text {
+            font-family: $font-options;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+
+        &-green {
+            color: $LawnGreen;
+            font-family: $font-options;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 0;
+            transition: color ease-in-out 0.3s;
+
+            &:hover {
+                color: $black-color;
+            }
+        }
+    }
+
+    &-social {
+        align-items: center;
+        display: flex;
+        gap: 8px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    &-icons {
+        list-style: none;
+    }
+
+    &-icon {
+        color: $LawnGreen;
+        transition: color 0.3s ease-in-out 0.1s;
+
+        &:hover {
+            color: $black-color;
+        }
+    }
+
+    &-quick {
+        width: 16%;
+    }
+
+    &-list {
+        margin-top: 5px;
+        padding: 0;
+    }
+
+    &-link {
+        list-style: none;
+        margin-bottom: 15px;
+    }
+
+    &-item {
+        color: $black-color;
+        font-family: $font-options;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: color ease-in-out 0.35s;
+
+        &:hover {
+            color: $LawnGreen;
+        }
+    }
+
+    &-support {
+        width: 16%;
+    }
+
+    &-opening {
+        width: 33%;
+    }
+
+    &-table {
+        border: 1px solid $Gainsboro;
+        border-collapse: collapse;
+        border-spacing: 2px;
+        border-style: solid;
+        display: table;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    &-table-cell {
+        border: 1px solid $Gainsboro;
+        color: $black-color;
+        font-family: $font-options;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0;
+        padding: 8px;
+        text-align: left;
+    }
+
+    &-copyright {
+        background-color: $Lavender;
+        padding: 15px 0;
+        width: 100%;
+
+        &-content {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1440px;
+            padding-left: var(--bs-gutter-x, 0.75rem);
+
+            padding-right: var(--bs-gutter-x, 0.75rem);
+            width: 100%;
+        }
+
+        &-text {
+            color: $black-color;
+            font-family: $font-secondary;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 28px;
+            margin-bottom: 0;
+            margin-bottom: 10px;
+        }
+
+        &-image {
+            background-image: url("https://foodingly.netlify.app/assets/img/common/cards.png");
+            height: 35px;
+            width: 212px;
+        }
+    }
+
+    @media (max-width: $laptod) {
+        &-help {
+            width: 27%;
+        }
+
+        &-quick {
+            width: 15%;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-container {
+            gap: 36px;
+
+            justify-self: start;
+            padding-left: 8%;
+            padding-right: 8%;
+        }
+
+        &-help {
+            margin-right: 0px;
+            width: 43%;
+        }
+
+        &-quick {
+            margin-left: 0px;
+            width: 50%;
+        }
+
+        &-support {
+            margin-left: 0;
+            width: 230px;
+        }
+
+        &-opening {
+            margin-left: 0;
+            width: 454px;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-copyright-content {
+            flex-direction: column;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        &-container {
+            gap: 25px;
+            justify-content: flex-start;
+            padding: 70px 15px 40px;
+        }
+
+        &-help-info {
+            width: 100%;
+        }
+
+        &-quick {
+            width: 100%;
+        }
+
+        &-list {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        &-support {
+            width: 100%;
+        }
+
+        &-opening {
+            width: 100%;
+        }
+
+        &-table {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+    }
+}

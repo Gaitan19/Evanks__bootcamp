@@ -1,0 +1,74 @@
+.Menu {
+    justify-content: space-between;
+    &-image {
+        background-image: url("https://foodingly.netlify.app/assets/img/logo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40px;
+        object-fit: cover;
+        width: 197px;
+
+        @include media-breakpoint-down(sm) {
+            height: 35.63px;
+            width: 175.5px;
+        }
+    }
+
+    &-options {
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-left: 60px;
+    }
+
+    &-item {
+        color: $black;
+        display: block;
+        font-family: $font-secondary;
+        font-size: 16px;
+        font-weight: 600;
+        min-width: 70px;
+        padding: 0 0 5px 0;
+    }
+
+    &-dropdown {
+        color: $black;
+        font-family: $font-secondary;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 8px;
+        margin-right: 15px;
+        margin-right: 0;
+
+        &:hover {
+            background-color: $transparent;
+            color: $black;
+        }
+    }
+
+    &-tools {
+        align-items: center;
+        display: flex;
+        margin-left: 25px;
+    }
+
+    &-icon {
+        color: $LawnGreen;
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-dropdown {
+            margin-left: 0;
+        }
+
+        &-item {
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        &-icon {
+            color: $paragraph-color;
+        }
+    }
+}

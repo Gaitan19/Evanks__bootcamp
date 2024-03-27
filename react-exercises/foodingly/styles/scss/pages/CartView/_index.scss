@@ -1,0 +1,160 @@
+.View {
+    &-container {
+        align-items: flex-start;
+        display: flex;
+        padding: 0 0.7rem;
+        width: 100%;
+
+        &-table {
+            max-height: 499px;
+            overflow-y: auto;
+            padding: 0 0.7rem;
+            width: 100%;
+        }
+
+        &-item {
+            margin-top: 60px;
+            padding: 0.7rem;
+            width: 50%;
+        }
+    }
+
+    &-table {
+        width: 100%;
+
+        &-headers {
+            background: $LawnGreen;
+            color: $white;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        &-header {
+            border-bottom: 3px solid $LawnGreen;
+            border-right: 1px solid $gray-secondary;
+            color: $white;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        &-rows {
+            background: $white;
+            & td {
+                border-bottom: 1px solid $light-gray-secondary;
+                border-right: 1px solid $light-gray-secondary;
+                font-weight: 500;
+                padding: 10px;
+                text-align: center;
+                text-transform: capitalize;
+            }
+        }
+
+        &-name {
+            color: $LawnGreen;
+        }
+
+        &-image {
+            max-width: 180px;
+            overflow: hidden;
+        }
+    }
+
+    &-item {
+        align-items: flex-start;
+        background: $white;
+        border-radius: 10px;
+        box-shadow: $shadow-food;
+        display: flex;
+        flex-direction: column;
+        padding: 25px 20px 35px 20px;
+        width: 100%;
+    }
+
+    &-trash {
+        background: none;
+        border: none;
+        color: $LawnGreen;
+        font-size: 20px;
+        transition: $transition;
+
+        &:hover {
+            color: $black-color;
+        }
+    }
+
+    &-total {
+        width: 100%;
+
+        & span {
+            font-weight: 500;
+        }
+    }
+
+    &-input {
+        margin: 30px 0 20px;
+
+        width: 100%;
+
+        &-quantity {
+            background: none;
+            border: 1px solid $light-gray-secondary;
+            height: 40px;
+            margin-left: 5px;
+            padding: 0 5px 0 10px;
+            text-align: center;
+            width: 60px;
+        }
+    }
+
+    &-subtotal {
+        border-bottom: 1px solid $LightGrey;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        padding-left: 105px;
+        width: 100%;
+    }
+
+    &-amount {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    @include media-breakpoint-down(xxl) {
+    }
+
+    @include media-breakpoint-down(xl) {
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-table {
+            min-width: 890px;
+        }
+
+        &-container {
+            flex-direction: row;
+            &-table {
+                max-width: 100%;
+                overflow-x: auto;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-container {
+            flex-direction: column;
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+    }
+}

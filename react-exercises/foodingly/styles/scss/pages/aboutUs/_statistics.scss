@@ -1,0 +1,81 @@
+.Statistics {
+    background-color: $Gainsboro;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &-content {
+        background: $white;
+        border-radius: 12px;
+        box-shadow: $shadow-statistics;
+        display: flex;
+        margin: 0 1.5rem;
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    &-container {
+        align-items: center;
+        border-right: 1px solid $Linen;
+        display: flex;
+        flex-direction: column;
+        padding: 35px 0;
+        width: 25%;
+    }
+
+    &-counter {
+        color: $LawnGreen;
+        font-size: 35px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        padding-top: 6px;
+    }
+
+    &-title {
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 2px;
+    }
+
+    @include media-breakpoint-down(xxl) {
+        &-content {
+            max-width: 1140px;
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-content {
+            max-width: 960px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-content {
+            flex-wrap: wrap;
+            max-width: 720px;
+        }
+
+        &-container {
+            width: 50%;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-content {
+            flex-direction: column;
+            max-width: 540px;
+        }
+
+        &-container {
+            border-bottom: 1px solid $Linen;
+            width: 100%;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-content {
+            flex-direction: column;
+            max-width: 100%;
+        }
+    }
+}
